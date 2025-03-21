@@ -5,11 +5,11 @@ import { copyFileSync } from "node:fs";
 import { join } from "node:path";
 
 export default defineConfig({
-  base: "/remix-gh-pages/",
+  base: "/calculators-spa/",
   plugins: [
     remix({
       ssr: false,
-      basename: "/remix-gh-pages/",
+      basename: "/calculators-spa/",
       buildEnd(args) {
         if (!args.viteConfig.isProduction) return;
 
