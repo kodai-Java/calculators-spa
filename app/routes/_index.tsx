@@ -16,6 +16,9 @@ export default function Index() {
         <li>
           <Link to="form-example">Form Example</Link>
         </li>
+        <li>
+          <Link to="compound-interest">複利計算</Link>
+        </li>
       </ul>
     </div>
   );
