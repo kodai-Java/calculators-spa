@@ -3,10 +3,12 @@ import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { copyFileSync } from "node:fs";
 import { join } from "node:path";
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   base: "/calculators-spa/",
   plugins: [
+    tailwindcss(),
     remix({
       ssr: false,
       basename: "/calculators-spa/",
