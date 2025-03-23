@@ -3,19 +3,16 @@ import { Link } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix SPA" },
-    { name: "description", content: "Welcome to Remix (SPA Mode)!" },
+    { title: "計算ツール" },
+    { name: "description", content: "計算ツールサイト" },
   ];
 };
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix (SPA Mode)</h1>
+    <div>
+      <h1>計算ツールサイト</h1>
       <ul>
-        <li>
-          <Link to="form-example">Form Example</Link>
-        </li>
         <li>
           <Link to="compound-interest">複利計算</Link>
         </li>
